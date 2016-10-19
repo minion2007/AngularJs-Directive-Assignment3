@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<title>Directive ng-dblClick</title>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController">
+		<button ng-dblclick="changeName()">{{message}}</button>
+	</div>
+	
+<script>
+	var app=angular.module("myApp",[]);
+	app.controller('myController', function($scope){
+	$scope.message=" double click ";
+	$scope.changeName=function(){
+	alert("Angular JS is fun");
+}
+});
+</script>
+</body>
+</html>
